@@ -3,7 +3,7 @@ const express = require("express");
 const app = express(express.json());
 
 app.get("", (req, res) => {
-  res.send("Basic Deployment Update!");
+  res.send("Deployment With Pm2 and Github Action!");
 });
 
 app.get("/json", (req, res) => {
