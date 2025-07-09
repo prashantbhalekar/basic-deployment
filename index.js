@@ -3,7 +3,13 @@ const express = require("express");
 const app = express(express.json());
 
 app.get("", (req, res) => {
-  res.send("Basic Deployment!");
+  res.send("Basic Deployment Update!");
+});
+
+app.get("/json", (req, res) => {
+  res.json({
+    success: true,
+  });
 });
 
 app.listen("3000", () => {
