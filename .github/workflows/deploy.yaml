@@ -20,4 +20,4 @@ jobs:
             cd basic-deployment
             git pull
             npm install
-            pm2 restart basic-app
+            pm2 restart myapp
